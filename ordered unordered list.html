@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ordered list and Unordered list</title>
+</head>
+
+<body>
+  <h2>Unordered List</h2>
+
+    <ul>
+    <li>first item</li>
+    <li>second item
+    <!-- Look, the closing </li> tag is not placed here! -->
+      <ul>
+        <li>second item first subitem</li>
+        <li>second item second subitem
+        <!-- Same for the second nested unordered list! -->
+          <ul>
+            <li>second item second subitem first sub-subitem</li>
+            <li>second item second subitem second sub-subitem</li>
+            <li>second item second subitem third sub-subitem</li>
+          </ul>
+        </li> <!-- Closing </li> tag for the li that
+                    contains the third unordered list -->
+        <li>second item third subitem</li>
+      </ul>
+    <!-- Here is the closing </li> tag -->
+    </li>
+    <li>third item</li>
+  </ul>
+
+  <h2>Ordered list</h2>
+  <ol>
+    <li>item</li>
+    <li>item
+      <ol type="i">
+        <li>sub item</li>
+        <li>sub item
+          <ol start="10">
+            <li>sub item</li>
+            <li>sub item</li>
+          </ol>
+          </li>
+          <li>sub item</li>
+          </ol>
+          <li>item</li>
+      </ol>
+  <h2>Ordered list inside unordered list</h2>
+  <ul>
+    <li>first item</li>
+    <li>second item
+      <ol>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+      </li>
+      <li>third item</li>
+  </ul>
+
+  <h2>Unordered list inside ordered list</h2>
+  <ol>
+    <li>item</li>
+    <li>item
+      <ul>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+      </li>
+      <li>item</li>
+  </ol>
+
+
+</body>
+
+</html>
